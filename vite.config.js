@@ -14,6 +14,10 @@ import {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/podcast_vue/",
+  build: {
+    outDir: "docs"
+  },
   plugins: [
     vue(),
     AutoImport({
@@ -65,5 +69,6 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       '@tailwindcss': path.resolve(__dirname, '../../../node_modules/tailwindcss')
     }
-  }
+  },
+  publicPath: process.env.NODE_ENV === "production" ? "/<Repository_Name>/" : "/"
 })
