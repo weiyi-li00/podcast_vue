@@ -11,7 +11,7 @@
         </nav>
     </header>
     <div class="content">
-      <RouterView />
+      <RouterView class="py-2"/>
     </div>
 
   </div>
