@@ -30,8 +30,6 @@ button {
  position: relative;
  font-weight: 1000;
  font-size: 17px;
- -webkit-box-shadow: 4px 8px 19px -3px $b;
- box-shadow: 4px 8px 19px -3px $b;
  transition: all 250ms;
  overflow: hidden;
 }

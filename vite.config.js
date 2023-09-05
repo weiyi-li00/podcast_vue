@@ -60,14 +60,16 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         // 全域的 SCSS 變數和 mixin 檔案路徑
-        additionalData: `@import "@/assets/styles/variables.scss";`
+        additionalData: `
+          @import "@/assets/styles/utils/variables.scss";
+          @import "@/assets/styles/utils/mixin.scss";
+        `
       }
     }
   },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@tailwindcss': path.resolve(__dirname, '../../../node_modules/tailwindcss')
     }
   },
   publicPath: process.env.NODE_ENV === "production" ? "/<Repository_Name>/" : "/"

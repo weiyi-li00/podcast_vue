@@ -1,7 +1,7 @@
-@import "_variables.scss";
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-nav{
+// 不能直接使用 @tailwindcss 别名来导入 Tailwind CSS 的样式文件。
+//Tailwind CSS 并不是一个 SCSS 文件，而是一个 CSS 框架，
+//因此不能使用 SCSS 的 @import 语法导入。
+@import './base/base';
+nav {
     background-color: rgb(70, 66, 73);
 }
