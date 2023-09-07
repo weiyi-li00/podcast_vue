@@ -9,7 +9,13 @@ import { relative } from 'pathe';
 import { reactive } from 'vue';
 import * as islogin from '../composables/islogin'
 const { test } = islogin
-const isloginData = reactive(['電子郵件','密碼'])
+const isloginData = reactive([{
+  title:'電子郵件',
+  showEyes: false
+},
+  { title:'密碼',
+  showEyes: true
+}])
 
 
 
